@@ -20,10 +20,10 @@ describe('utils',function(){
       done();
     });
 
-    it('should return html', function(done){
-      utils.getHtmlEmail({owner: "test", resetToken: "token"}).should.be.String
-      done()
-    });
+    // it('should return html', function(done){
+    //   utils.getHtmlEmail({owner: "test", resetToken: "token"}).should.be.String
+    //   done()
+    // });
 
     it('should error', function(done) {
       utils = proxyquire('../lib/utils', {'./waterlock-local-auth': {}});
